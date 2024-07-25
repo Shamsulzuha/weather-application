@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .weather_img {
+            width: 60px;
+        }
+    </style>
+    <title>Weather App</title>
+</head>
+
+<body class="p-[50px] flex justify-center item-center">
+
+    <section
+        class="w-[45%] rounded-lg shadow-lg lg:p-[85px] flex gap-y-2 flex-col items-center justify-center bg-slate-400">
+        <!-- Search Section -->
+        <form class="weather_search relative">
+            <i class="fa-solid fa-magnifying-glass absolute top-1 text-white pl-1"></i>
+            <input type="text" placeholder="Search your city..."
+                class="city_Name pl-8 bg-black text-white placeholder:text-white">
+        </form>
+        <!-- City Section -->
+        <div class="weather_city "></div>
+        <!-- Date Scction -->
+        <div class="weather_date"></div>
+        <!--Clouds Section-->
+        <div class="weather_cloud bg-black text-white rounded-lg p-1">Clouds</div>
+        <!-- Image Section -->
+        <div class="weather_img">img</div>
+        <!-- Degree Section -->
+        <div class="weather_degree">277.46&#176</div>
+        <!-- Min & Max Section -->
+        <div class="flex gap-8">
+            <div class="weather_min">Min</div>
+            <div class="weather_max">Max</div>
+        </div>
+        <!-- Last Section -->
+        <div class="grid grid-cols-2 gap-4">
+            <div class="flex items-center justify-center bg-white px-10 py-3 rounded-md shadow-lg">
+                <div><i class="fa-solid fa-droplet"></i></div>
+                <div class="ml-2">
+                    <div>Feels Like</div>
+                    <div class="weather_feels">22</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center bg-white px-10 py-3 rounded-md shadow-lg">
+                <div><i class="fa-brands fa-drupal"></i></div>
+                <div class="ml-2">
+                    <div>Humidity</div>
+                    <div class="weather_humidity">22</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center bg-white px-10 py-3 rounded-md shadow-lg">
+                <div><i class="fa-solid fa-wind"></i></div>
+                <div class="ml-2">
+                    <div>Wind</div>
+                    <div class="weather_wind">22</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center bg-white px-10 py-3 rounded-md shadow-lg">
+                <div><i class="fa-brands fa-wpressr"></i></div>
+                <div class="ml-2">
+                    <div>Pressure</div>
+                    <div class="weather_pressure">22</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="weather.js"></script>
+</body>
+
+</html>
